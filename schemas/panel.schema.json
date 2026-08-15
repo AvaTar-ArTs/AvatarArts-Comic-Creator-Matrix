@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AvatarArts Panel",
+  "type": "object",
+  "required": [
+    "panel_id",
+    "purpose",
+    "reading_order",
+    "visual_instruction",
+    "layout_slot",
+    "continuity_status"
+  ],
+  "properties": {
+    "panel_id": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string",
+      "enum": [
+        "setup",
+        "evidence",
+        "temptation",
+        "possession",
+        "recognition",
+        "consequence",
+        "codex",
+        "transition"
+      ]
+    },
+    "reading_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "caption": {
+      "type": "string"
+    },
+    "speech": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "speaker",
+          "text"
+        ],
+        "properties": {
+          "speaker": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "voice_style": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "visual_instruction": {
+      "type": "string"
+    },
+    "layout_slot": {
+      "type": "string"
+    },
+    "camera": {
+      "type": "string"
+    },
+    "emotion": {
+      "type": "string"
+    },
+    "character_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "realm_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relic_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "palette_state": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "prompt_version": {
+      "type": "string"
+    },
+    "asset_versions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "continuity_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "needs_revision",
+        "rejected"
+      ]
+    }
+  }
+}
