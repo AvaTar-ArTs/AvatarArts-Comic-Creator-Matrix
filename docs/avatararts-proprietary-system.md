@@ -104,3 +104,14 @@ The proprietary core must remain provider-neutral. AI image vendors, LLM vendors
 ## Ownership boundary
 
 The unique AvatarArts value is not any single model call. It is the accumulated system of world logic, visual identity, psychological progression, evidence, state, and artifact provenance that makes outputs recognizably yours.
+
+## Security and reliability baseline
+
+The proprietary system adopts these non-negotiable rules:
+
+- Secrets never enter browser bundles, generated prompts, manifests, or committed source.
+- Email delivery uses environment-backed SMTP configuration and runtime recipients.
+- Structured outputs are parsed as JSON with schema validation and explicit fallback behavior.
+- Every generated asset receives a manifest entry containing source intent, prompt, provider, model, seed, version, output path, and status.
+- Retired secrets are revoked at the provider, even when Git history is intentionally preserved.
+- Adapter failures become visible states such as `needs_revision` or `blocked`, never silent omissions.

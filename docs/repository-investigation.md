@@ -181,3 +181,13 @@ Authorship: authored AvatarArts project. This affects provenance, not its evalua
 ## Overall observation
 
 These repositories are not interchangeable products. They represent different layers: generation, UI, decomposition, delivery, restoration, and evidence state. The proprietary system should preserve those distinctions while giving them one shared semantic contract.
+
+## Remediation status
+
+The findings above have been converted into draft remediation PRs:
+
+- ComicBook-AI: https://github.com/AvaTar-ArTs/ComicBook-AI/pull/1
+- comic-cult: https://github.com/AvaTar-ArTs/comic-cult/pull/1
+- comics_generator: https://github.com/AvaTar-ArTs/comics_generator/pull/1
+
+The repository analysis is therefore complete: the original vulnerabilities were identified, the code changes were prepared, and the remaining operational actions are credential revocation, environment configuration, and review/merge. Git history was not rewritten.
