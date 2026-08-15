@@ -16,7 +16,7 @@ This record closes the investigation findings for the six-repository review and 
 
 ## History policy
 
-No Git history rewrite was performed. This preserves collaborator safety and avoids pretending that a public secret was never exposed. Provider-side revocation remains mandatory.
+No Git history rewrite was performed. This preserves collaborator safety and avoids pretending that a public secret was never exposed. Provider-side rotation or revocation is outside this code-only change and was not performed.
 
 ## Proprietary rule
 
