@@ -54,3 +54,12 @@ AvatarArts should own the semantic layer:
 - reader simulation
 
 Providers, renderers, fonts, cloud storage, and postprocessors become replaceable adapters around that layer.
+
+## Remediation outcome
+
+The comparison has now produced concrete fixes:
+
+- Client-side secret exposure is removed from the ComicBook-AI remediation branch.
+- Embedded mail credentials and fixed recipients are removed from the comic-cult remediation branch.
+- JSON-first panel parsing, validated fallback behavior, and asset manifests are added to the comics_generator remediation branch.
+- The remaining implementation boundary is explicit: ComicBook-AI still needs its server-side `/api/generate-image` route configured before generation works in deployment.
