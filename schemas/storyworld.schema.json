@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/AvaTar-ArTs/AvatarArts-Comic-Creator-Matrix/schema/storyworld.schema.json",
+  "title": "AvatarArts Storyworld",
+  "type": "object",
+  "required": ["storyworld_id", "title", "entities"],
+  "properties": {
+    "storyworld_id": { "type": "string" },
+    "title": { "type": "string" },
+    "logline": { "type": "string" },
+    "visual_thesis": { "type": "string" },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "name"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["character", "creature", "faction", "realm", "location", "relic", "curse", "motif", "episode", "asset"]
+          },
+          "name": { "type": "string" },
+          "identity": { "type": "string" },
+          "first_appearance": { "type": "string" },
+          "known_behavior": { "type": "string" },
+          "visual_anchor": { "type": "string" },
+          "psychological_function": { "type": "string" },
+          "current_state": { "type": "string" },
+          "last_changed": { "type": "string" },
+          "provenance": { "type": "array", "items": { "type": "string" } },
+          "contradictory_accounts": { "type": "array", "items": { "type": "string" } },
+          "cross_media_instances": { "type": "array", "items": { "type": "string" } },
+          "metadata": { "type": "object" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}
