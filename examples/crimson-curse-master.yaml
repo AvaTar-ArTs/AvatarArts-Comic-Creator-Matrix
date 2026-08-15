@@ -1,0 +1,70 @@
+storyworld_id: scarlet-reliquary
+title: The Crimson Curse Master
+logline: A feared keeper of curses discovers that every spell is a behavioral prison built from a truth he refuses to name.
+visual_thesis: Beautiful evidence becomes frightening when its meaning changes.
+character:
+  id: cursemaster
+  anchors:
+    - tall narrow silhouette
+    - asymmetrical scarlet-black hat
+    - pale beard with one crimson section
+    - incomplete seven-point collar mark
+    - poison quill
+    - left hand gloved, right hand altered
+    - one displaced object per scene
+world_rules:
+  - curse hunger is specific and cannot be satisfied cheaply
+  - every curse has a price that changes behavior
+  - corpse-memory is not resurrection
+  - choosing a curse is not controlling it
+  - official records are useful and false
+  - biography becomes anatomy
+motifs:
+  primary: displaced object
+  secondary:
+    - incomplete sigil
+    - red thread
+    - poison flower
+    - handwriting not his
+season_one:
+  - episode: 1
+    title: Bottle That Moved
+    question: Can an object remember being moved?
+    consequence: The archive gains a shelf that was not built.
+  - episode: 2
+    title: Curse With His Handwriting
+    question: Who authored the curse before he was born?
+    consequence: His records begin correcting themselves.
+  - episode: 3
+    title: Dead Man's Correction
+    question: Can corpse-memory contradict the living witness?
+    consequence: A dead witness names a living accomplice.
+  - episode: 4
+    title: Eighth Reflection
+    question: What is missing from the official seven?
+    consequence: Mirrors show a curse that has not been chosen.
+  - episode: 5
+    title: Quiet Crown
+    question: What does authority look like without speech?
+    consequence: The room obeys annotations instead of commands.
+  - episode: 6
+    title: Rot Bride's Garden
+    question: Can decay be a form of devotion?
+    consequence: The garden remembers every person buried near it.
+  - episode: 7
+    title: Hollow Skin
+    question: Who is speaking through the face?
+    consequence: A trusted voice becomes unusable.
+  - episode: 8
+    title: Selection Is Not Consent
+    question: What part of the self did the curse choose?
+    consequence: The Cursemaster loses the right to call the transformation accidental.
+episode_formula:
+  - mundane procedure
+  - anomaly
+  - investigation
+  - recognition
+  - false control
+  - moral choice
+  - curse-specific consequence
+  - new permanent rule
