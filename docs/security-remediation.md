@@ -21,3 +21,8 @@ No Git history rewrite was performed. This preserves collaborator safety and avo
 ## Proprietary rule
 
 AvatarArts Forge treats security, provenance, parsing integrity, and continuity as one trust boundary: an artifact is not publishable unless its source, transformation path, and configuration are inspectable.
+
+
+## Scope clarification
+
+The current remediation scope is code removal and secure runtime configuration only. No OpenAI or Gmail credential is being revoked or rotated by these changes. The repository-side fixes remove secrets from source and route runtime configuration through deployment secrets or environment variables.
